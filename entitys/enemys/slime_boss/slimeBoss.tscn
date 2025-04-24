@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cp6xfjiyb5egj"]
+
+[ext_resource type="Script" path="res://entitys/enemys/slime_boss/slimeBoss.gd" id="1_3p5yd"]
+[ext_resource type="PackedScene" uid="uid://ogik4s70pgwl" path="res://characters/slime/slime.tscn" id="2_h5obs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_q1h48"]
+radius = 45.0
+
+[node name="SlimeBoss" type="CharacterBody2D"]
+scale = Vector2(3.11125, 3.11125)
+platform_floor_layers = 0
+script = ExtResource("1_3p5yd")
+
+[node name="Slime" parent="." instance=ExtResource("2_h5obs")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -30)
+shape = SubResource("CircleShape2D_q1h48")

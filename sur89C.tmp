@@ -1,0 +1,128 @@
+[gd_scene load_steps=6 format=3 uid="uid://dk7dx1bjoh3fh"]
+
+[ext_resource type="Script" path="res://survivors_game.gd" id="1_k5t8c"]
+[ext_resource type="PackedScene" uid="uid://c5g5e836tv8m4" path="res://entitys/player/player.tscn" id="1_xhjh3"]
+[ext_resource type="PackedScene" uid="uid://ctxrivapuol4j" path="res://pine_tree.tscn" id="2_1pwlt"]
+[ext_resource type="PackedScene" uid="uid://c00vq86p6mjpx" path="res://entitys/enemys/slime/mob.tscn" id="4_i68cx"]
+
+[sub_resource type="Curve2D" id="Curve2D_xx1nr"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -70.8769, -46.0754, 0, 0, 0, 0, 2137, -26, 0, 0, 0, 0, 2134, 1351, 0, 0, 0, 0, -121, 1364, 0, 0, 0, 0, -122, -72)
+}
+point_count = 5
+
+[node name="Game" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_k5t8c")
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Background"]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="Background/CanvasLayer"]
+offset_left = -26.0
+offset_top = 2.0
+offset_right = 1936.0
+offset_bottom = 1157.0
+
+[node name="EffectsLayer" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="Player" parent="." instance=ExtResource("1_xhjh3")]
+position = Vector2(981, 617)
+
+[node name="Path2D" type="Path2D" parent="Player"]
+position = Vector2(-988.453, -625.123)
+scale = Vector2(0.938911, 0.887187)
+curve = SubResource("Curve2D_xx1nr")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Player/Path2D"]
+unique_name_in_owner = true
+position = Vector2(-70.8769, -46.0754)
+rotation = 0.00909238
+
+[node name="RegresionTimer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="Timer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 2.0
+autostart = true
+
+[node name="Mob" parent="." instance=ExtResource("4_i68cx")]
+position = Vector2(421, 948)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(259, 411)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(1183, 261)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(1273, 295)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(1121, 331)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(349, 449)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(239, 511)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(1339, 735)
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(1437, 755)
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(1365, 809)
+
+[node name="StaticBody2D10" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(405, 861)
+
+[node name="StaticBody2D11" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(489, 875)
+
+[node name="StaticBody2D12" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(329, 903)
+
+[node name="UI" type="Node2D" parent="."]
+
+[node name="GameOver" type="CanvasLayer" parent="UI"]
+unique_name_in_owner = true
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="UI/GameOver"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.698039)
+
+[node name="Label" type="Label" parent="UI/GameOver/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -543.0
+offset_top = -136.0
+offset_right = 543.0
+offset_bottom = 137.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 150
+text = "Game Over
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]
+[connection signal="timeout" from="RegresionTimer" to="." method="_on_regresion_timer_timeout"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

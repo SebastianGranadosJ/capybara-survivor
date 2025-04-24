@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://crf08p4e716bi"]
+
+[ext_resource type="Script" path="res://entitys/items/VelocityMovementBuff/velocity_movement_buff.gd" id="1_k8h2w"]
+
+[node name="VelocityMovementBuff" type="Node2D"]
+script = ExtResource("1_k8h2w")

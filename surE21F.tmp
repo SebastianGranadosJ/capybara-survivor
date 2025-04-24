@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://dk7dx1bjoh3fh"]
+
+[ext_resource type="PackedScene" uid="uid://c5g5e836tv8m4" path="res://player.tscn" id="1_xhjh3"]
+[ext_resource type="PackedScene" uid="uid://ctxrivapuol4j" path="res://pine_tree.tscn" id="2_1pwlt"]
+[ext_resource type="PackedScene" uid="uid://c00vq86p6mjpx" path="res://mob.tscn" id="3_ewhug"]
+
+[node name="Game" type="Node2D"]
+y_sort_enabled = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(259, 411)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(1183, 261)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(1273, 295)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(1121, 331)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(349, 449)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(239, 511)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(1339, 735)
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(1437, 755)
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(1365, 809)
+
+[node name="StaticBody2D10" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(405, 861)
+
+[node name="StaticBody2D11" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(489, 875)
+
+[node name="StaticBody2D12" parent="." instance=ExtResource("2_1pwlt")]
+position = Vector2(329, 903)
+
+[node name="Player" parent="." instance=ExtResource("1_xhjh3")]
+position = Vector2(998, 646)
+
+[node name="Mob" parent="." instance=ExtResource("3_ewhug")]
+position = Vector2(721, 325)

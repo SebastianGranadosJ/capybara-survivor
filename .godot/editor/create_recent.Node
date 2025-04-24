@@ -1,0 +1,14 @@
+Timer
+Label
+CharacterBody2D
+Node2D
+Node
+ParallaxBackground
+PanelContainer
+ColorRect
+Button
+VBoxContainer
+CollisionShape2D
+Area2D
+ProgressBar
+Sprite2D

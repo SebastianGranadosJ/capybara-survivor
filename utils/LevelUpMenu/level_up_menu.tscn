@@ -1,0 +1,64 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmklukd1ahsyk"]
+
+[ext_resource type="Script" path="res://utils/LevelUpMenu/level_up_menu.gd" id="1_yrxb2"]
+
+[node name="LevelUpMenu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yrxb2")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -961.0
+offset_top = -529.0
+offset_right = -810.0
+offset_bottom = -296.0
+scale = Vector2(12.7465, 4.66288)
+color = Color(0.113725, 0.113725, 0.113725, 0.176471)
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -271.0
+offset_top = -255.5
+offset_right = 271.0
+offset_bottom = 255.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="ButtonItem1" type="Button" parent="PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Item 1"
+
+[node name="ButtonItem2" type="Button" parent="PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Item2"
+
+[node name="ButtonItem3" type="Button" parent="PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Item 3"
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/ButtonItem1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/ButtonItem1" to="." method="_on_button_item_1_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/ButtonItem2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/ButtonItem2" to="." method="_on_button_item_2_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/ButtonItem3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/ButtonItem3" to="." method="_on_button_item_3_pressed"]

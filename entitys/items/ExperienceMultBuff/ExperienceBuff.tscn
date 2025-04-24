@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcpkt4mq00b26"]
+
+[ext_resource type="Script" path="res://entitys/items/ExperienceMultBuff/experience_buff.gd" id="1_rmi8d"]
+
+[node name="ExperienceBuff" type="Node2D"]
+script = ExtResource("1_rmi8d")

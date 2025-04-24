@@ -1,0 +1,118 @@
+[gd_scene load_steps=7 format=3 uid="uid://c5g5e836tv8m4"]
+
+[ext_resource type="Script" path="res://entitys/player/player.gd" id="1_etjf1"]
+[ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_oaro0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_id56n"]
+radius = 27.0185
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l0q4u"]
+radius = 33.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_evfk2"]
+bg_color = Color(0.152941, 0.168627, 0.188235, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ovpr2"]
+bg_color = Color(0.388235, 0.8, 0.372549, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Player" type="CharacterBody2D"]
+platform_floor_layers = 4278190080
+script = ExtResource("1_etjf1")
+
+[node name="HappyBoo" parent="." instance=ExtResource("1_oaro0")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_id56n")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="HurtBox" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+shape = SubResource("CircleShape2D_l0q4u")
+one_way_collision_margin = 0.0
+debug_color = Color(0.92073, 5.83345e-05, 0.693813, 0.42)
+
+[node name="ProgressBarHealth" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+offset_left = -143.0
+offset_top = -135.0
+offset_right = 143.0
+offset_bottom = -104.0
+theme_override_styles/background = SubResource("StyleBoxFlat_evfk2")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ovpr2")
+value = 100.0
+show_percentage = false
+
+[node name="ProgressBarExperience" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+offset_left = -872.0
+offset_top = -526.0
+offset_right = 876.0
+offset_bottom = -503.0
+theme_override_styles/background = SubResource("StyleBoxFlat_evfk2")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ovpr2")
+max_value = 20.0
+
+[node name="ObjectsLabel" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = -867.0
+offset_top = -479.0
+offset_right = -506.0
+offset_bottom = -290.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 19
+text = "Objetos Equipados:
+"
+
+[node name="LevelLabel" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = -867.0
+offset_top = -527.0
+offset_right = -827.0
+offset_bottom = -504.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Lvl 1"
+
+[node name="ScoreLabel" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 732.0
+offset_top = -492.0
+offset_right = 867.0
+offset_bottom = -469.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="PlayedTime" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -484.0
+offset_right = 20.0
+offset_bottom = -461.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "00:00
+"
+horizontal_alignment = 1
+
+[node name="MinuteTimer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="MinuteTimer" to="." method="_on_minute_timer_timeout"]

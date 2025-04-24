@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpyn18gtmk7al"]
+
+[ext_resource type="Script" path="res://entitys/weapons/arrowWeapon/arrowWeapon.gd" id="1_611ia"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2cdim"]
+radius = 735.068
+
+[node name="ArrowWeapon" type="Node2D"]
+script = ExtResource("1_611ia")
+
+[node name="Area" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area"]
+shape = SubResource("CircleShape2D_2cdim")

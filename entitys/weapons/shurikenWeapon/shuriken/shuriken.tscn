@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://j1yp8mkikegq"]
+
+[ext_resource type="Script" path="res://entitys/weapons/shurikenWeapon/shuriken/shuriken.gd" id="1_7r6i2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gex3d"]
+radius = 139.09
+
+[sub_resource type="Gradient" id="Gradient_64jc3"]
+offsets = PackedFloat32Array(0.255172, 0.662069, 0.665517, 0.917241, 0.996552)
+colors = PackedColorArray(0, 0.933333, 1, 0.823529, 0, 0.988235, 1, 0.854902, 0.384314, 0.384314, 0.384314, 0.427451, 1, 1, 1, 0, 0.435294, 0.435294, 0.435294, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_x31n1"]
+gradient = SubResource("Gradient_64jc3")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="Shuriken" type="Area2D"]
+top_level = true
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_7r6i2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_gex3d")
+
+[node name="MagicAreaSprite" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+scale = Vector2(4.53125, 4.74299)
+texture = SubResource("GradientTexture2D_x31n1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
