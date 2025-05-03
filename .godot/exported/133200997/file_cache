@@ -4,10 +4,10 @@ res://entitys/enemys/slime/slimeRojo/mobRojo.tscn::d81b4697cbae87f733c3f161bc72e
 res://entitys/enemys/slime/slimeRojo/RedSlimeAnimation.tscn::0f5d25ed5f895012224be716f2e0349e::1746251705::res://.godot/exported/133200997/export-7dc9604ce088967fa1eaa606956356a6-RedSlimeAnimation.scn
 res://entitys/enemys/slime/SlimeVerde/GreenSlimeAnimation.tscn::3fcaa338ba59cac481359b4db8d529a5::1746251705::res://.godot/exported/133200997/export-2e68bd71c353d4eb5031db959576b955-GreenSlimeAnimation.scn
 res://entitys/enemys/slime/SlimeVerde/mobVerde.tscn::480d9d0ffd7c9fa62b155acfc6488fa0::1746251705::res://.godot/exported/133200997/export-2437c1b474d868ee211889b894bad78e-mobVerde.scn
-res://entitys/enemys/slime_boss/reyslime.tscn::82596d6062418eb2b53a4b98eb832d7a::1746257121::res://.godot/exported/133200997/export-f1cf5daeee451aab20603a508fcf38e9-reyslime.scn
-res://entitys/enemys/slime_boss/slimeBoss.tscn::ffb80a80ac53e57997d8966cc9f1980c::1746257121::res://.godot/exported/133200997/export-09e9cc76962d81c3a6830ed9461a38b9-slimeBoss.scn
-res://entitys/enemys/slime_boss/slimeBossAnimation.tscn::5738228c68f6ae0620ed46f4a8b43f1c::1746257121::res://.godot/exported/133200997/export-6b3d595c29f1bfcaf1f8b6353f64f885-slimeBossAnimation.scn
-res://entitys/experienceDrop/experienceLowDrop.tscn::3fc2b9db7bc724b0eb3b9c7d458268fb::1746257121::res://.godot/exported/133200997/export-005a60f5451a402074ad5e2ceba55efb-experienceLowDrop.scn
+res://entitys/enemys/slime_boss/reyslime.tscn::82596d6062418eb2b53a4b98eb832d7a::1746258534::res://.godot/exported/133200997/export-f1cf5daeee451aab20603a508fcf38e9-reyslime.scn
+res://entitys/enemys/slime_boss/slimeBoss.tscn::ffb80a80ac53e57997d8966cc9f1980c::1746258534::res://.godot/exported/133200997/export-09e9cc76962d81c3a6830ed9461a38b9-slimeBoss.scn
+res://entitys/enemys/slime_boss/slimeBossAnimation.tscn::5738228c68f6ae0620ed46f4a8b43f1c::1746258534::res://.godot/exported/133200997/export-6b3d595c29f1bfcaf1f8b6353f64f885-slimeBossAnimation.scn
+res://entitys/experienceDrop/experienceLowDrop.tscn::3fc2b9db7bc724b0eb3b9c7d458268fb::1746258534::res://.godot/exported/133200997/export-005a60f5451a402074ad5e2ceba55efb-experienceLowDrop.scn
 res://entitys/experienceDrop/shurikeeen.tscn::41b088fcdd28827dda229c85548c291c::1746251706::res://.godot/exported/133200997/export-802361ab23d56b712cb19e22f1cbd539-shurikeeen.scn
 res://entitys/items/AttackCooldownBuff/AttackCooldownBuff.tscn::1e1fb5a8fd68a9f23b94c71496c9eb8d::1746251706::res://.godot/exported/133200997/export-786a4ea0fd1f41f787655b3582ce662c-AttackCooldownBuff.scn
 res://entitys/items/DamageMultBuff/DamageMultBuff.tscn::b93f8c8b66f9741d6caec5e5affcba3d::1746251706::res://.godot/exported/133200997/export-ab829e45b6e974c964036c69295472eb-DamageMultBuff.scn
@@ -20,8 +20,8 @@ res://entitys/player/capybaracho.tscn::3a317978ca5904712c3e2a27e13994f1::1746251
 res://entitys/player/player.tscn::7ea9319fe2bd684d598f1cc9f280e91c::1746251706::res://.godot/exported/133200997/export-ebf6d79ba855c4f6bd3e4b24abf4101f-player.scn
 res://entitys/weapons/arrowWeapon/arrow/arrow.tscn::604f824ad28cec12c2b77b8abbc831cc::1746251706::res://.godot/exported/133200997/export-51838a1be507ef1fff54497c9f789cd0-arrow.scn
 res://entitys/weapons/arrowWeapon/arrowWeapon.tscn::06a81896b235608d8683834ceed934f3::1746251706::res://.godot/exported/133200997/export-335b1391149fde2e68a02bb53da7f774-arrowWeapon.scn
-res://entitys/weapons/magicArea/MagiAnimation.tscn::ef9c95bd7d752c1a52b9660dc817c2b4::1746257121::res://.godot/exported/133200997/export-3942b715eb6c2e3934d2c448e62d0be2-MagiAnimation.scn
-res://entitys/weapons/magicArea/magic_area.tscn::8f2f3239d90ffd5ab1b92ef6d8ffa9b8::1746257121::res://.godot/exported/133200997/export-4ab33637e5f254cb1c97fe67760743f9-magic_area.scn
+res://entitys/weapons/magicArea/MagiAnimation.tscn::ef9c95bd7d752c1a52b9660dc817c2b4::1746258534::res://.godot/exported/133200997/export-3942b715eb6c2e3934d2c448e62d0be2-MagiAnimation.scn
+res://entitys/weapons/magicArea/magic_area.tscn::8f2f3239d90ffd5ab1b92ef6d8ffa9b8::1746258534::res://.godot/exported/133200997/export-4ab33637e5f254cb1c97fe67760743f9-magic_area.scn
 res://entitys/weapons/shurikenWeapon/shuriken/shuriken.tscn::c45a20fae25aa1c8e654463732cda32f::1746251706::res://.godot/exported/133200997/export-9cdb4da2d8b8bc6fa2b37845af38199d-shuriken.scn
 res://entitys/weapons/shurikenWeapon/shuriken/ShurikenWeapon.tscn::5d75762e0578ad9229e25b2ef8369004::1746251706::res://.godot/exported/133200997/export-d83a00761b3ea3703e7b3f6923442eb9-ShurikenWeapon.scn
 res://entitys/weapons/shurikenWeapon/shuriken_weapon.tscn::091faa57ecb4363e202af1600336013d::1746251706::res://.godot/exported/133200997/export-ce21e0c2bacd5361c94c7c0f8fd78ef5-shuriken_weapon.scn
@@ -34,19 +34,19 @@ res://UI/KingSlime/animated_sprite_2d.tscn::dceeb15648e2cda78b2d18c5842021a2::17
 res://UI/pistol/impact/impact.tscn::2b75597f41f7c52486ceed15de4a965a::1746251707::res://.godot/exported/133200997/export-d14ae489e3e69862e9b3dcb3488fb739-impact.scn
 res://UI/pistol/impact/shurikeeen.tscn::fbf9ae0acc82bf129758a4449a942aa0::1746251707::res://.godot/exported/133200997/export-6527dc0b64d38598fd0fd3c7ced54986-shurikeeen.scn
 res://UI/pistol/impact/slimemorado.tscn::5fdcc11b0c18ab597759c6f1b22d7b53::1746251707::res://.godot/exported/133200997/export-107898e391805f588933c2a050ec50f2-slimemorado.scn
-res://UI/pistol/impact/xp jaja saludos.tscn::deefdb2817801712203dd40a56086eaf::1746257121::res://.godot/exported/133200997/export-e664e13eddc3d7a3273c42a8c63ba296-xp jaja saludos.scn
+res://UI/pistol/impact/xp jaja saludos.tscn::deefdb2817801712203dd40a56086eaf::1746258534::res://.godot/exported/133200997/export-e664e13eddc3d7a3273c42a8c63ba296-xp jaja saludos.scn
 res://UI/pistol/muzzle_flash/muzzle_flash.tscn::d198c103dac8930189f372ff0d63f7b5::1746251707::res://.godot/exported/133200997/export-1c125129e75e8216080fe5852770beed-muzzle_flash.scn
 res://UI/smoke_explosion/smoke_explosion.tscn::50cd9bfac4fe807b3bb64f49585c60c8::1746251707::res://.godot/exported/133200997/export-bf6ca8e66a1ada4fcca70f7864927376-smoke_explosion.scn
 res://UI/pine_tree.tscn::0003f25da5b5b766eb5df10911c422d0::1746251707::res://.godot/exported/133200997/export-0971e9ec5c5416708d176d2c394bdca6-pine_tree.scn
-res://utils/GamOver/game_over.tscn::d0f9f9402dca6647681819f0bab7fbcc::1746257121::res://.godot/exported/133200997/export-7a40b55c009c7b031c16fa016732dea0-game_over.scn
-res://utils/LevelUpMenu/level_up_menu.tscn::0efd738f0a6ed3f7c2864cd466e38596::1746257121::res://.godot/exported/133200997/export-ab75975be6a89ab7dd970b828ea5ccea-level_up_menu.scn
-res://utils/WinUI/win_UI.tscn::f11b8483f8f3b336ba533e543b698ca3::1746257121::res://.godot/exported/133200997/export-dbf1e162232cbf4257e4e8f3e78f7903-win_UI.scn
+res://utils/GamOver/game_over.tscn::d0f9f9402dca6647681819f0bab7fbcc::1746258534::res://.godot/exported/133200997/export-7a40b55c009c7b031c16fa016732dea0-game_over.scn
+res://utils/LevelUpMenu/level_up_menu.tscn::0efd738f0a6ed3f7c2864cd466e38596::1746258534::res://.godot/exported/133200997/export-ab75975be6a89ab7dd970b828ea5ccea-level_up_menu.scn
+res://utils/WinUI/win_UI.tscn::f11b8483f8f3b336ba533e543b698ca3::1746258534::res://.godot/exported/133200997/export-dbf1e162232cbf4257e4e8f3e78f7903-win_UI.scn
 res://capysentado.tscn::06b50a87519790a753ccdbf6e4ab6e3c::1746251707::res://.godot/exported/133200997/export-2cc7516bc763d1aa8c46568b9d6c8f0d-capysentado.scn
 res://character_body_2d.tscn::ceba548fd82d213d8af9e252c2ce557d::1746251707::res://.godot/exported/133200997/export-25eb6ab7203e76730ffb59dd2891996c-character_body_2d.scn
 res://default_bus_layout.tres::f79fcacca07a2d471d5d1918fc173cbc::1695668179::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res
 res://GarlicWeapon.tscn::2b7de334d9ce4f77d93ff3b11e965e20::1746251707::res://.godot/exported/133200997/export-5ce379c8d2cde0df05c466a163c8ad01-GarlicWeapon.scn
-res://survivors_game.tscn::c08a233309b438a32d669d9440362b6d::1746257121::res://.godot/exported/133200997/export-aec2b102d84bb89f68fff5ad31f206fa-survivors_game.scn
-res://tile_map.tscn::4560d28366507bc4affa154f668382b4::1746251708::res://.godot/exported/133200997/export-22792ee0018d439a895e1f6e6e7db267-tile_map.scn
+res://survivors_game.tscn::5784b31b77eb3fcd235cf31d35ba69da::1746258662::res://.godot/exported/133200997/export-aec2b102d84bb89f68fff5ad31f206fa-survivors_game.scn
+res://tile_map.tscn::4560d28366507bc4affa154f668382b4::1746258535::res://.godot/exported/133200997/export-22792ee0018d439a895e1f6e6e7db267-tile_map.scn
 res://characters/happy_boo/happy_boo.tscn::50f862bf4be202cd70b541ba027b9b43::1745423492::res://.godot/exported/133200997/export-d648d95b60292c6ab5a2df3cfa132f65-happy_boo.scn
 res://characters/happy_boo/square_modification_stack.tres::c50df0cb08042a928161eb2d35e7a5f9::1695668179::res://.godot/exported/133200997/export-f25555e8dbdc63b0046bd11dbf14cb6d-square_modification_stack.res
 res://characters/slime/slime.tscn::4109dfdd6b05c79de6f9acdffb60aab6::1744919915::res://.godot/exported/133200997/export-00cd1686d0dcba26ac4404616e000a71-slime.scn

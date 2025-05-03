@@ -1,15 +1,3 @@
-res://utils/LevelUpMenu/level_up_menu.tscn
-res://entitys/enemys/slime/mob.gd
-res://entitys/weapons/arrowWeapon/arrow/arrow.gd
-res://utils/GamOver/game_over.tscn
 res://survivors_game.tscn
-res://utils/WinUI/win_UI.tscn
-res://entitys/enemys/slime_boss/slimeBossAnimation.tscn
-res://entitys/enemys/slime_boss/slimeBoss.tscn
-res://entitys/enemys/slime_boss/reyslime.tscn
-res://entitys/experienceDrop/experienceLowDrop.tscn
-res://UI/pistol/impact/xp jaja saludos.tscn
-res://entitys/weapons/magicArea/magic_area.gd
-res://entitys/weapons/magicArea/magic_area.tscn
-res://entitys/weapons/magicArea/MagiAnimation.tscn
-res://tile_map.tscn
+res://entitys/weapons/arrowWeapon/arrow/arrow.gd
+res://entitys/enemys/slime/mob.gd
