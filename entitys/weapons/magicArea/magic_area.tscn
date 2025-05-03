@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://40dnqjxbd4ww"]
 
 [ext_resource type="Script" uid="uid://dfsdkguahpye8" path="res://entitys/weapons/magicArea/magic_area.gd" id="1_5kgi8"]
-[ext_resource type="PackedScene" uid="uid://br7wkahdt5vad" path="res://entitys/weapons/magicArea/MagiAnimation.tscn" id="2_5fwp1"]
+[ext_resource type="PackedScene" uid="uid://br7wkahdt5vad" path="res://UI/pistol/impact/shurikeeen.tscn" id="2_5fwp1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_letvv"]
 radius = 87.0057

@@ -83,7 +83,7 @@ icon_alignment = 1
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/ButtonItem1" to="." method="_on_button_item_1_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/ButtonItem1" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="PanelContainer/VBoxContainer/ButtonItem2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/ButtonItem2" to="." method="_on_button_item_2_pressed"]
-[connection signal="pressed" from="PanelContainer/VBoxContainer/ButtonItem3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/ButtonItem2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/ButtonItem3" to="." method="_on_button_item_3_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/ButtonItem3" to="." method="_on_button_3_pressed"]

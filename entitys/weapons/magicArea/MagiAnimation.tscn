@@ -55,6 +55,6 @@ vframes = 3
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 unique_name_in_owner = true
 libraries = {
-"": SubResource("AnimationLibrary_vo5k2")
+&"": SubResource("AnimationLibrary_vo5k2")
 }
 speed_scale = 1.5
