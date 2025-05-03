@@ -14,11 +14,11 @@ func level_up():
 
 func get_buff_for_level(target_level:int):
 	match target_level:
-		1: return 10
-		2: return 20
-		3: return 45
-		4: return 70
-		5: return 100
+		1: return 50
+		2: return 100
+		3: return 200
+		4: return 400
+		5: return 800
 		_: return get_buff_for_level(5) + (target_level - 5) * 10
 
 func apply_effect(body):

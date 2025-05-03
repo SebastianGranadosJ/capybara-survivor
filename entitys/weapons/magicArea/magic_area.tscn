@@ -1,18 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://40dnqjxbd4ww"]
+[gd_scene load_steps=4 format=3 uid="uid://40dnqjxbd4ww"]
 
-[ext_resource type="Script" path="res://entitys/weapons/magicArea/magic_area.gd" id="1_5kgi8"]
+[ext_resource type="Script" uid="uid://dfsdkguahpye8" path="res://entitys/weapons/magicArea/magic_area.gd" id="1_5kgi8"]
+[ext_resource type="PackedScene" uid="uid://br7wkahdt5vad" path="res://entitys/weapons/magicArea/MagiAnimation.tscn" id="2_5fwp1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_letvv"]
-radius = 326.153
-
-[sub_resource type="Gradient" id="Gradient_7uxwa"]
-offsets = PackedFloat32Array(0.255172, 0.662069, 0.665517, 0.917241, 0.996552)
-colors = PackedColorArray(0, 0.933333, 1, 0.823529, 0, 0.988235, 1, 0.854902, 0.384314, 0.384314, 0.384314, 0.427451, 1, 1, 1, 0, 0.435294, 0.435294, 0.435294, 0)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_ljf28"]
-gradient = SubResource("Gradient_7uxwa")
-fill = 1
-fill_from = Vector2(0.5, 0.5)
+radius = 87.0057
 
 [node name="MagicArea" type="Node2D"]
 show_behind_parent = true
@@ -24,11 +16,10 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MagicArea2D"]
+position = Vector2(0, 1)
 shape = SubResource("CircleShape2D_letvv")
 
-[node name="MagicAreaSprite" type="Sprite2D" parent="MagicArea2D"]
+[node name="Animation" parent="." instance=ExtResource("2_5fwp1")]
 unique_name_in_owner = true
-scale = Vector2(10.9688, 11.4813)
-texture = SubResource("GradientTexture2D_ljf28")
 
 [connection signal="body_entered" from="MagicArea2D" to="." method="_on_area_2d_body_entered"]

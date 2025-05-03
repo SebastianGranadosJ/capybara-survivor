@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://bugu8n83m483e"]
+
+[ext_resource type="Texture2D" uid="uid://eqkfqqk0od1c" path="res://UI/KingSlime/KingSlime_Moving2.png" id="1_8xdfc"]
+[ext_resource type="Texture2D" uid="uid://dm8qtsxewkjm2" path="res://UI/KingSlime/KingSlime_Moving1.png" id="2_mpaf4"]
+[ext_resource type="Texture2D" uid="uid://nxri7s031jwo" path="res://UI/KingSlime/KingSlime_Moving3.png" id="3_qwqy3"]
+[ext_resource type="Texture2D" uid="uid://br0m1bmd0emow" path="res://UI/KingSlime/KingSlime_Moving4.png" id="4_fvc01"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ykhxq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8xdfc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mpaf4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qwqy3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fvc01")
+}],
+"loop": true,
+"name": &"Move",
+"speed": 7.5
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_ykhxq")
+animation = &"Move"
+autoplay = "Move"
+frame_progress = 0.662906

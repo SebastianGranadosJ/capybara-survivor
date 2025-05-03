@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://ds7mt1fqx5cgo"]
+
+[ext_resource type="Script" uid="uid://bufxa5pqopp7t" path="res://entitys/enemys/slime_boss/slime_boss_animation.gd" id="1_ybiyj"]
+[ext_resource type="PackedScene" uid="uid://bugu8n83m483e" path="res://UI/KingSlime/animated_sprite_2d.tscn" id="2_hcepf"]
+
+[node name="SlimeBossAnimation" type="Node2D"]
+script = ExtResource("1_ybiyj")
+
+[node name="AnimatedSprite2D" parent="." instance=ExtResource("2_hcepf")]
+unique_name_in_owner = true
+position = Vector2(-0.642829, -19.2853)
+frame_progress = 0.732297

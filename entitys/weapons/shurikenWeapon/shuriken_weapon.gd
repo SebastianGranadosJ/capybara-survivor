@@ -21,7 +21,7 @@ func attack():
 	
 	var new_shur_1 = SHUR.instantiate()
 	var new_shur_2 = SHUR.instantiate()
-	var offset_distance = 120
+	var offset_distance = 20
 
 	if alternate_shooting:
 		# Disparo ARRIBA y ABAJO
@@ -66,9 +66,9 @@ func get_buff_for_level(target_level:int):
 	match target_level:
 		1: return 10
 		2: return 25
-		3: return 50
-		4: return 80
-		5: return 120
+		3: return 45
+		4: return 70
+		5: return 110
 		_: return get_buff_for_level(5) + (target_level - 5) * 20
 
 

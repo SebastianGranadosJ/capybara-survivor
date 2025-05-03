@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://4icdwmo8dbsh"]
 
-[ext_resource type="Script" path="res://entitys/weapons/shurikenWeapon/shuriken_weapon.gd" id="1_bnecm"]
+[ext_resource type="Script" uid="uid://pr5vahlkrx0j" path="res://entitys/weapons/shurikenWeapon/shuriken_weapon.gd" id="1_bnecm"]
 
 [node name="Shuriken" type="Node2D"]
 script = ExtResource("1_bnecm")

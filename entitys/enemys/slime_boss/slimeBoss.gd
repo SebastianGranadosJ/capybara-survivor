@@ -29,7 +29,7 @@ func _physics_process(delta):
 		knockback_timer -= delta
 	else:
 		var direction = global_position.direction_to(player.global_position)
-		velocity = direction * 300
+		velocity = direction * 200
 	move_and_slide()
 	
 	 
@@ -39,7 +39,7 @@ func take_damage(damage = 1):
 	health -= damage
 	$Slime.play_hurt()
 	if health <= 0:
-		get_parent().get_node("%Ganaste").visible = true
+		get_parent().show_win_scene()
 		get_tree().paused = true
 		mobKilled.emit()
 		queue_free()
@@ -49,11 +49,12 @@ func take_damage(damage = 1):
 		effects_layer.add_child(experience)
 		experience.global_position = global_position
 		
-		const SMOKE_SCENE = preload("res://smoke_explosion/smoke_explosion.tscn")
+		const SMOKE_SCENE = preload("res://UI/smoke_explosion/smoke_explosion.tscn")
 		var smoke = SMOKE_SCENE.instantiate()
 		effects_layer.add_child(smoke)
 		smoke.global_position = global_position
 		player.score += 10 
+		print("Actual Health: ", health, " Damage taked: ", damage)
 	
 func apply_knockback(direction: Vector2, force: float):
 	knockback_velocity = direction.normalized() * force

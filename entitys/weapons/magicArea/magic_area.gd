@@ -2,6 +2,9 @@ extends Weapon
 
 
 
+
+
+
 func _init():
 	baseAttackCooldown = 1.0
 	objectName = "Magia Cabrona"
@@ -11,10 +14,14 @@ func _init():
 	level = 1
 	damage = get_buff_for_level(level)
 	id = "W002"
-	y_sort_enabled = false
+	
+func _physics_process(delta: float) -> void:
+		%Animation.play()
 
 
 func attack():
+
+	print("xads")
 	var enemies_in_range = %MagicArea2D.get_overlapping_bodies()
 	for enemy in enemies_in_range:
 		if enemy.has_method("take_damage"):
@@ -29,10 +36,10 @@ func get_buff_for_level(target_level:int):
 	match target_level:
 		1: return 2
 		2: return 6
-		3: return 15
-		4: return 30
-		5: return 50
-		_: return get_buff_for_level(5) + (target_level - 5) * 2
+		3: return 10
+		4: return 25
+		5: return 40
+		_: return get_buff_for_level(5) + (target_level - 5) * 20
 
 
 func get_level_up_message() -> String:

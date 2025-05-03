@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cro3uk40ocmqq"]
+
+[ext_resource type="Script" uid="uid://drrjnoli6ehne" path="res://entitys/enemys/slime/slimeRojo/mob.gd" id="1_f0a1c"]
+[ext_resource type="PackedScene" uid="uid://cp3li1fs4ixo8" path="res://entitys/enemys/slime/slimeMorado/slimemorado.tscn" id="2_kjars"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lm7l7"]
+radius = 12.0
+
+[node name="Mob" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
+platform_floor_layers = 4278190080
+script = ExtResource("1_f0a1c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+shape = SubResource("CircleShape2D_lm7l7")
+
+[node name="Slime" parent="." instance=ExtResource("2_kjars")]
+position = Vector2(0, -8)

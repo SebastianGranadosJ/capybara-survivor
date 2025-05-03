@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dqv56ond37x0w"]
 
-[ext_resource type="Script" path="res://entitys/items/AttackCooldownBuff/attack_cooldown_buff.gd" id="1_rqhn2"]
+[ext_resource type="Script" uid="uid://cn6r04qc7h6vb" path="res://entitys/items/AttackCooldownBuff/attack_cooldown_buff.gd" id="1_rqhn2"]
 
 [node name="VelocityAttackBuff" type="Node2D"]
 script = ExtResource("1_rqhn2")

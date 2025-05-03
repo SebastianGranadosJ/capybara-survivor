@@ -25,7 +25,7 @@ func attack():
 	var new_arrow = ARROW.instantiate()
 	new_arrow.initialize(calculateAttackDamage())
 	
-	var offset_distance = 120  
+	var offset_distance = 50  
 	
 	var direction = Vector2.RIGHT.rotated(global_rotation)
 	
@@ -43,11 +43,11 @@ func level_up():
 func get_buff_for_level(target_level:int):
 	match target_level:
 		1: return 1
-		2: return 3
-		3: return 8
-		4: return 15
-		5: return 30
-		_: return get_buff_for_level(5) + (target_level - 5) 
+		2: return 5
+		3: return 12
+		4: return 22
+		5: return 38
+		_: return get_buff_for_level(5) + (target_level - 5) * 5
 
 
 func get_level_up_message() -> String:

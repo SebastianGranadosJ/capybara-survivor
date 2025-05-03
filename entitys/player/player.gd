@@ -5,7 +5,7 @@ class_name player
 signal health_depleted
 
 const BASEMAXHEALTH: float = 50
-const BASEMOVEVEL = 600
+const BASEMOVEVEL = 350
 
 var score:int = 0
 var total_seconds := 0
@@ -17,12 +17,12 @@ var exp: int
 var moveVel: float
 var damageMult: float
 var expMult: float
-var expForNextLevel: int = 20
+var expForNextLevel: int = 10
 
 var weapons: Array[Weapon]
 
 var items: Array[Item]
-
+var idle = true
 
 var levelUpMenu
 
@@ -39,6 +39,8 @@ func _ready():
 	progressBarHealth = %ProgressBarHealth
 	reloadProgressBarHealth()
 	show_object_summary()
+	$HappyBoo.play_idle_animation()
+	
 	
 func _init():
 	maxHealth = BASEMAXHEALTH
@@ -72,6 +74,7 @@ func level_up(node: Node2D):
 	%ProgressBarExperience.value = exp
 	level += 1
 	reloadLevelLabel()
+	health_player()
 
 	# Si el nodo es un 'Weapon'
 	if node is Weapon:
@@ -114,7 +117,7 @@ func addWeapon(weapon: Weapon):
 	weapons.append(weapon)
 
 	add_child(weapon)  # Primero agregarlo al árbol
-	weapon.position = Vector2(0, -40)  # Luego posicionarlo localmente (respecto al personaje)
+	weapon.position = Vector2(0, -10)  # Luego posicionarlo localmente (respecto al personaje)
 
 func addItem(item:Item):
 
@@ -151,24 +154,29 @@ func has_object_with_id(object_id: String) -> Node:
 	return null
 
 
-
 func _physics_process(delta):
+	
 	show_score()
-	### Input handless key presses, mouse inputs etc
-	#print(" MaxHealth: " , maxHealth,  " moveVel: ", moveVel, " Damage Mult: ", damageMult, " ExpMult: " , expMult)
-	var direction = Input.get_vector("move_left", "move_right", 
-	"move_up","move_down") ## This tags "move left" that its related to a
-	## Key its defined at input map
 	
-	## Velocity its an variable from CharacterBody2D
-	velocity = direction * moveVel # Pixels by second
+	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	velocity = direction * moveVel
 	
-	move_and_slide() ### It calls a CharacterBody2D Func to movement
+	move_and_slide()
 	
 	if velocity.length() != 0:
-		$HappyBoo.play_walk_animation()	
+		$HappyBoo.play_walk_animation()
+		idle = false
+
+		# ➤ EFECTO ESPEJO SEGÚN DIRECCIÓN HORIZONTAL
+		if velocity.x > 0:
+			$HappyBoo.scale.x = -1  # Voltear a la derecha
+		elif velocity.x < 0:
+			$HappyBoo.scale.x = 1   # Volver a la forma original (mirar a la izquierda)
+
 	else:
-		$HappyBoo.play_idle_animation()
+		if !idle:
+			$HappyBoo.play_idle_animation()
+			idle = true
 	
 	const DAMAGE_RATE = 5.0
 	var overlapping_mobs = %HurtBox.get_overlapping_bodies()
@@ -178,7 +186,7 @@ func _physics_process(delta):
 		%ProgressBarHealth.value = health
 		if health <= 0.0:
 			health_depleted.emit()
-	
+
 		
 
 func reloadProgressBarHealth():
@@ -202,7 +210,7 @@ func show_object_summary() :
 
 
 func show_score() :
-	var result = "Score: %d" % [score]
+	var result = "Puntaje: %d" % [score]
 	%ScoreLabel.text = result
 
 
@@ -214,3 +222,7 @@ func update_time_label():
 	var minutes = total_seconds / 60
 	var seconds = total_seconds % 60
 	$PlayedTime.text = " %02d:%02d" % [minutes, seconds]
+
+func health_player():
+	health = maxHealth
+	%ProgressBarHealth.value = health

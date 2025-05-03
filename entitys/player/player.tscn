@@ -1,13 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://c5g5e836tv8m4"]
+[gd_scene load_steps=9 format=3 uid="uid://c5g5e836tv8m4"]
 
-[ext_resource type="Script" path="res://entitys/player/player.gd" id="1_etjf1"]
-[ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_oaro0"]
+[ext_resource type="Script" uid="uid://cgmmhevtk3mrl" path="res://entitys/player/player.gd" id="1_etjf1"]
+[ext_resource type="PackedScene" uid="uid://b5s2oey0l22dy" path="res://entitys/player/capybaraAnimation.tscn" id="2_218l1"]
+[ext_resource type="FontFile" uid="uid://c7icelmv7qlyf" path="res://UI/bytebounce.medium.ttf" id="3_3wx5j"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_id56n"]
-radius = 27.0185
+radius = 14.0357
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_l0q4u"]
-radius = 33.0
+radius = 15.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_evfk2"]
 bg_color = Color(0.152941, 0.168627, 0.188235, 1)
@@ -23,19 +24,28 @@ corner_radius_top_right = 8
 corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2aseu"]
+bg_color = Color(0.0627451, 0.698039, 0.937255, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
 [node name="Player" type="CharacterBody2D"]
 platform_floor_layers = 4278190080
 script = ExtResource("1_etjf1")
 
-[node name="HappyBoo" parent="." instance=ExtResource("1_oaro0")]
+[node name="HappyBoo" parent="." instance=ExtResource("2_218l1")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -9)
 shape = SubResource("CircleShape2D_id56n")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="HurtBox" type="Area2D" parent="."]
 unique_name_in_owner = true
+position = Vector2(0, -9)
 collision_layer = 0
 collision_mask = 2
 
@@ -46,10 +56,11 @@ debug_color = Color(0.92073, 5.83345e-05, 0.693813, 0.42)
 
 [node name="ProgressBarHealth" type="ProgressBar" parent="."]
 unique_name_in_owner = true
-offset_left = -143.0
-offset_top = -135.0
-offset_right = 143.0
-offset_bottom = -104.0
+z_index = 9
+offset_left = -29.0
+offset_top = -40.0
+offset_right = 29.0
+offset_bottom = -31.0
 theme_override_styles/background = SubResource("StyleBoxFlat_evfk2")
 theme_override_styles/fill = SubResource("StyleBoxFlat_ovpr2")
 value = 100.0
@@ -57,57 +68,72 @@ show_percentage = false
 
 [node name="ProgressBarExperience" type="ProgressBar" parent="."]
 unique_name_in_owner = true
-offset_left = -872.0
-offset_top = -526.0
-offset_right = 876.0
-offset_bottom = -503.0
+z_index = 9
+offset_left = -278.0
+offset_top = -168.0
+offset_right = 282.0
+offset_bottom = -154.0
+theme_override_fonts/font = ExtResource("3_3wx5j")
+theme_override_font_sizes/font_size = 20
 theme_override_styles/background = SubResource("StyleBoxFlat_evfk2")
-theme_override_styles/fill = SubResource("StyleBoxFlat_ovpr2")
+theme_override_styles/fill = SubResource("StyleBoxFlat_2aseu")
 max_value = 20.0
 
 [node name="ObjectsLabel" type="Label" parent="."]
 unique_name_in_owner = true
-offset_left = -867.0
-offset_top = -479.0
-offset_right = -506.0
-offset_bottom = -290.0
+z_index = 9
+offset_left = -279.0
+offset_top = -146.0
+offset_right = -103.0
+offset_bottom = -54.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 19
+theme_override_fonts/font = ExtResource("3_3wx5j")
+theme_override_font_sizes/font_size = 14
 text = "Objetos Equipados:
 "
 
 [node name="LevelLabel" type="Label" parent="."]
 unique_name_in_owner = true
-offset_left = -867.0
-offset_top = -527.0
-offset_right = -827.0
-offset_bottom = -504.0
+z_index = 9
+offset_left = -262.0
+offset_top = -169.0
+offset_right = -222.0
+offset_bottom = -146.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_3wx5j")
+theme_override_font_sizes/font_size = 20
 text = "Lvl 1"
 
 [node name="ScoreLabel" type="Label" parent="."]
 unique_name_in_owner = true
-offset_left = 732.0
-offset_top = -492.0
-offset_right = 867.0
-offset_bottom = -469.0
+z_index = 9
+offset_left = 177.0
+offset_top = -151.0
+offset_right = 353.0
+offset_bottom = -59.0
+scale = Vector2(1.00278, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_3wx5j")
+theme_override_font_sizes/font_size = 14
+text = "Puntaje:"
 
 [node name="PlayedTime" type="Label" parent="."]
+z_index = 9
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -484.0
-offset_right = 20.0
-offset_bottom = -461.0
+offset_left = -64.0
+offset_top = -154.0
+offset_right = 64.0
+offset_bottom = -122.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
+theme_override_fonts/font = ExtResource("3_3wx5j")
+theme_override_font_sizes/font_size = 30
 text = "00:00
 "
 horizontal_alignment = 1

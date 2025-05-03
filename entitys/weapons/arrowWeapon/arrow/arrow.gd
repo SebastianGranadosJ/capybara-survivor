@@ -2,15 +2,15 @@ extends Area2D
 
 
 var travelled_distance = 0
-var bullet_damage = 50
+var bullet_damage = 1
 
 func initialize(damage = 50):
 	bullet_damage = damage
 	
 
 func _physics_process(delta):
-	const SPEED = 1000
-	const RANGE = 1200
+	const SPEED = 700
+	const RANGE = 1000
 	
 	var direction = Vector2.RIGHT.rotated(rotation)
 	position += direction*SPEED*delta

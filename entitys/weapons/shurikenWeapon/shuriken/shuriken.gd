@@ -12,15 +12,19 @@ func initialize(damage := 1.0, angle := 0.0):
 	rotation = angle  # Esto también ajusta visualmente el sprite, si lo deseas
 
 func _physics_process(delta):
-	const SPEED = 1500
+	const SPEED = 450
 	const RANGE = 1200
+	const ROTATION_SPEED = 5.0  # Radianes por segundo (ajusta según lo que necesites)
 	
 	position += shoot_direction * SPEED * delta
 	travelled_distance += SPEED * delta
+
+	rotation += ROTATION_SPEED * delta  # ← Esta línea hace que rote continuamente
+
+	%AnimationPlayer2.play("ataque")
 	
 	if travelled_distance > RANGE:
 		queue_free()
-
 func _on_body_entered(body):
 	if body.has_method("take_damage"):
 		body.take_damage(damage)
