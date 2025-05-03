@@ -1,3 +1,7 @@
 res://survivors_game.tscn
 res://entitys/weapons/arrowWeapon/arrow/arrow.gd
 res://entitys/enemys/slime/mob.gd
+res://entitys/weapons/magicArea/magic_area.tscn
+res://entitys/weapons/magicArea/MagiAnimation.tscn
+res://UI/pistol/impact/shurikeeen.tscn
+res://entitys/weapons/magicArea/magic_area.gd

@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://40dnqjxbd4ww"]
+[gd_scene load_steps=3 format=3 uid="uid://40dnqjxbd4ww"]
 
 [ext_resource type="Script" uid="uid://dfsdkguahpye8" path="res://entitys/weapons/magicArea/magic_area.gd" id="1_5kgi8"]
-[ext_resource type="PackedScene" uid="uid://br7wkahdt5vad" path="res://UI/pistol/impact/shurikeeen.tscn" id="2_5fwp1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_letvv"]
 radius = 87.0057
@@ -18,8 +17,5 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MagicArea2D"]
 position = Vector2(0, 1)
 shape = SubResource("CircleShape2D_letvv")
-
-[node name="Animation" parent="." instance=ExtResource("2_5fwp1")]
-unique_name_in_owner = true
 
 [connection signal="body_entered" from="MagicArea2D" to="." method="_on_area_2d_body_entered"]

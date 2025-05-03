@@ -1,9 +1,10 @@
 extends Weapon
 
+var animation
 
-
-
-
+func _ready() -> void:
+	animation = preload("res://entitys/weapons/magicArea/MagiAnimation.tscn").instantiate()
+	add_child(animation)
 
 func _init():
 	baseAttackCooldown = 1.0
@@ -14,9 +15,10 @@ func _init():
 	level = 1
 	damage = get_buff_for_level(level)
 	id = "W002"
+
 	
 func _physics_process(delta: float) -> void:
-		%Animation.play()
+	animation.play()
 
 
 func attack():

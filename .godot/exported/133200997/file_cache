@@ -20,8 +20,8 @@ res://entitys/player/capybaracho.tscn::3a317978ca5904712c3e2a27e13994f1::1746251
 res://entitys/player/player.tscn::7ea9319fe2bd684d598f1cc9f280e91c::1746251706::res://.godot/exported/133200997/export-ebf6d79ba855c4f6bd3e4b24abf4101f-player.scn
 res://entitys/weapons/arrowWeapon/arrow/arrow.tscn::604f824ad28cec12c2b77b8abbc831cc::1746251706::res://.godot/exported/133200997/export-51838a1be507ef1fff54497c9f789cd0-arrow.scn
 res://entitys/weapons/arrowWeapon/arrowWeapon.tscn::06a81896b235608d8683834ceed934f3::1746251706::res://.godot/exported/133200997/export-335b1391149fde2e68a02bb53da7f774-arrowWeapon.scn
-res://entitys/weapons/magicArea/MagiAnimation.tscn::ef9c95bd7d752c1a52b9660dc817c2b4::1746258534::res://.godot/exported/133200997/export-3942b715eb6c2e3934d2c448e62d0be2-MagiAnimation.scn
-res://entitys/weapons/magicArea/magic_area.tscn::8f2f3239d90ffd5ab1b92ef6d8ffa9b8::1746258534::res://.godot/exported/133200997/export-4ab33637e5f254cb1c97fe67760743f9-magic_area.scn
+res://entitys/weapons/magicArea/MagiAnimation.tscn::ef9c95bd7d752c1a52b9660dc817c2b4::1746259689::res://.godot/exported/133200997/export-3942b715eb6c2e3934d2c448e62d0be2-MagiAnimation.scn
+res://entitys/weapons/magicArea/magic_area.tscn::167142dc2c00faa9d4df8697c4f25f4d::1746259805::res://.godot/exported/133200997/export-4ab33637e5f254cb1c97fe67760743f9-magic_area.scn
 res://entitys/weapons/shurikenWeapon/shuriken/shuriken.tscn::c45a20fae25aa1c8e654463732cda32f::1746251706::res://.godot/exported/133200997/export-9cdb4da2d8b8bc6fa2b37845af38199d-shuriken.scn
 res://entitys/weapons/shurikenWeapon/shuriken/ShurikenWeapon.tscn::5d75762e0578ad9229e25b2ef8369004::1746251706::res://.godot/exported/133200997/export-d83a00761b3ea3703e7b3f6923442eb9-ShurikenWeapon.scn
 res://entitys/weapons/shurikenWeapon/shuriken_weapon.tscn::091faa57ecb4363e202af1600336013d::1746251706::res://.godot/exported/133200997/export-ce21e0c2bacd5361c94c7c0f8fd78ef5-shuriken_weapon.scn
@@ -32,7 +32,7 @@ res://UI/characters/happy_boo/square_modification_stack.tres::c50df0cb08042a9281
 res://UI/characters/slime/slime.tscn::ee396008786ee944019d0452cc10e32d::1746251707::res://.godot/exported/133200997/export-f646ce8cfe83af1a1d33e5495d87cd77-slime.scn
 res://UI/KingSlime/animated_sprite_2d.tscn::dceeb15648e2cda78b2d18c5842021a2::1746251707::res://.godot/exported/133200997/export-57fe22f6ea1faef309ddbfbf41c9c05f-animated_sprite_2d.scn
 res://UI/pistol/impact/impact.tscn::2b75597f41f7c52486ceed15de4a965a::1746251707::res://.godot/exported/133200997/export-d14ae489e3e69862e9b3dcb3488fb739-impact.scn
-res://UI/pistol/impact/shurikeeen.tscn::fbf9ae0acc82bf129758a4449a942aa0::1746251707::res://.godot/exported/133200997/export-6527dc0b64d38598fd0fd3c7ced54986-shurikeeen.scn
+res://UI/pistol/impact/shurikeeen.tscn::297a70116a89c034ead78d200066b687::1746259689::res://.godot/exported/133200997/export-6527dc0b64d38598fd0fd3c7ced54986-shurikeeen.scn
 res://UI/pistol/impact/slimemorado.tscn::5fdcc11b0c18ab597759c6f1b22d7b53::1746251707::res://.godot/exported/133200997/export-107898e391805f588933c2a050ec50f2-slimemorado.scn
 res://UI/pistol/impact/xp jaja saludos.tscn::deefdb2817801712203dd40a56086eaf::1746258534::res://.godot/exported/133200997/export-e664e13eddc3d7a3273c42a8c63ba296-xp jaja saludos.scn
 res://UI/pistol/muzzle_flash/muzzle_flash.tscn::d198c103dac8930189f372ff0d63f7b5::1746251707::res://.godot/exported/133200997/export-1c125129e75e8216080fe5852770beed-muzzle_flash.scn
@@ -45,7 +45,7 @@ res://capysentado.tscn::06b50a87519790a753ccdbf6e4ab6e3c::1746251707::res://.god
 res://character_body_2d.tscn::ceba548fd82d213d8af9e252c2ce557d::1746251707::res://.godot/exported/133200997/export-25eb6ab7203e76730ffb59dd2891996c-character_body_2d.scn
 res://default_bus_layout.tres::f79fcacca07a2d471d5d1918fc173cbc::1695668179::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res
 res://GarlicWeapon.tscn::2b7de334d9ce4f77d93ff3b11e965e20::1746251707::res://.godot/exported/133200997/export-5ce379c8d2cde0df05c466a163c8ad01-GarlicWeapon.scn
-res://survivors_game.tscn::5784b31b77eb3fcd235cf31d35ba69da::1746258662::res://.godot/exported/133200997/export-aec2b102d84bb89f68fff5ad31f206fa-survivors_game.scn
+res://survivors_game.tscn::5784b31b77eb3fcd235cf31d35ba69da::1746259689::res://.godot/exported/133200997/export-aec2b102d84bb89f68fff5ad31f206fa-survivors_game.scn
 res://tile_map.tscn::4560d28366507bc4affa154f668382b4::1746258535::res://.godot/exported/133200997/export-22792ee0018d439a895e1f6e6e7db267-tile_map.scn
 res://characters/happy_boo/happy_boo.tscn::50f862bf4be202cd70b541ba027b9b43::1745423492::res://.godot/exported/133200997/export-d648d95b60292c6ab5a2df3cfa132f65-happy_boo.scn
 res://characters/happy_boo/square_modification_stack.tres::c50df0cb08042a928161eb2d35e7a5f9::1695668179::res://.godot/exported/133200997/export-f25555e8dbdc63b0046bd11dbf14cb6d-square_modification_stack.res
