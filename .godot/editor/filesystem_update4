@@ -1,12 +1,10 @@
-res://entitys/weapons/magicArea/magic_area.tscn
+res://survivors_game.tscn
 res://entitys/weapons/arrowWeapon/arrow/arrow.gd
 res://entitys/enemys/slime/mob.gd
-res://survivors_game.tscn
 res://entitys/weapons/magicArea/MagiAnimation.tscn
+res://entitys/weapons/magicArea/magic_area.tscn
 res://UI/pistol/impact/shurikeeen.tscn
-res://entitys/weapons/magicArea/magic_area.gd
-res://entitys/weapons/weapon.gd
-res://entitys/player/player.gd
 res://entitys/weapons/arrowWeapon/arrowWeapon.tscn
-res://entitys/weapons/arrowWeapon/arrowWeapon.gd
 res://entitys/weapons/weapon.tscn
+res://entitys/player/player.tscn
+res://entitys/player/player.gd
