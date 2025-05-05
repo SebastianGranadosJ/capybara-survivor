@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1746419252
+::res://::1746460043
 Captura de pantalla 2025-04-21 090550.png::CompressedTexture2D/CompressedTexture2D::6470568179338975752::1745244415::1746257043::1::::<><><>0<>0<>d38bd2cca9fe6a87da60ea5dd7dcce6f<>res://.godot/imported/Captura de pantalla 2025-04-21 090550.png-3f65350e321601bb684965309c9cf9a3.ctex::
 Captura de pantalla 2025-04-21 093500.png::CompressedTexture2D/CompressedTexture2D::8598442697462638610::1745246146::1746257043::1::::<><><>0<>0<>614760f88e37ec41b587bcd090131a10<>res://.godot/imported/Captura de pantalla 2025-04-21 093500.png-4daa779394621a0619e2eb26ea018de9.ctex::
 capysentado.tscn::PackedScene/PackedScene::5232836383099721368::1746251707::0::1::::<><><>0<>0<><>::
@@ -45,8 +45,8 @@ slime_hurt_eyes.png::CompressedTexture2D/CompressedTexture2D::479101052744533892
 xp.gd::GDScript/GDScript::3415831929366348798::1746151780::0::1::::<>Node2D<><>0<>0<><>::
 xp.tscn::PackedScene/PackedScene::6570763802401594955::1746251706::0::1::::<><><>0<>0<><>::uid://bol1w0fa6ew4j::::res://UI/xp/Experience_Orb_-_Animated-ezgif.com-gif-to-sprite-converter.png<>uid://bowwiuiy7sqx7::::res://entitys/xp.gd
 ::res://entitys/enemys/::1745423075
-::res://entitys/enemys/slime/::1746419240
-mob.gd::GDScript::7685072857648006054::1746419240::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://entitys/enemys/slime/::1746419257
+mob.gd::GDScript::7685072857648006054::1746419257::0::1::::<>CharacterBody2D<><>0<>0<><>::
 mob.tscn::PackedScene/PackedScene::6580477313622012201::1745506417::0::1::::<><><>0<>0<><>::res://entitys/enemys/slime/mob.gd<>uid://ogik4s70pgwl::::res://characters/slime/slime.tscn
 ::res://entitys/enemys/slime/slimeMorado/::1746251705
 mob.gd::GDScript/GDScript::7247204355030879812::1746150984::0::1::::<>CharacterBody2D<><>0<>0<><>::
@@ -100,7 +100,7 @@ velocity_movement_buff.gd::GDScript/GDScript::5628923808399578634::1745245890::0
 capybaraAnimation.tscn::PackedScene/PackedScene::4530909400646896018::1746251706::0::1::::<><><>0<>0<><>::uid://cwgggxpq2j5i3::::res://entitys/player/capybara_animation.gd<>uid://dj032de3fhfa6::::res://UI/capy/idle/sit.png<>uid://g7webkpepufp::::res://UI/capy/caminar izquierda/caminar.png
 capybaracho.tscn::PackedScene/PackedScene::392197945022383363::1746251706::0::1::::<><><>0<>0<><>::uid://dj032de3fhfa6::::res://UI/capy/idle/sit.png<>uid://g7webkpepufp::::res://UI/capy/caminar izquierda/caminar.png
 capybara_animation.gd::GDScript/GDScript::6329758442639857500::1746132729::0::1::::<>Node2D<><>0<>0<><>::
-player.gd::GDScript::5219488310145690269::1746418529::0::1::::player<>CharacterBody2D<><>0<>0<><>::
+player.gd::GDScript/GDScript::5219488310145690269::1746418529::0::1::::player<>CharacterBody2D<><>0<>0<><>::
 player.tscn::PackedScene::6892723373969976689::1746419067::0::1::::<><><>0<>0<><>::uid://cgmmhevtk3mrl::::res://entitys/player/player.gd<>uid://b5s2oey0l22dy::::res://entitys/player/capybaraAnimation.tscn<>uid://c7icelmv7qlyf::::res://UI/bytebounce.medium.ttf
 ::res://entitys/weapons/::1746419067
 weapon.gd::GDScript/GDScript::7069634857560454846::1746417286::0::1::::Weapon<>Node2D<><>0<>0<><>::
@@ -108,9 +108,9 @@ weapon.tscn::PackedScene::5256197120369973367::1746419067::0::1::::<><><>0<>0<><
 ::res://entitys/weapons/arrowWeapon/::1746419067
 arrowWeapon.gd::GDScript/GDScript::4475521018955445638::1746417418::0::1::::<>Weapon<><>0<>0<><>::
 arrowWeapon.tscn::PackedScene::3489635899327633147::1746419067::0::1::::<><><>0<>0<><>::uid://b408ga7u5qq8e::::res://entitys/weapons/arrowWeapon/arrowWeapon.gd
-::res://entitys/weapons/arrowWeapon/arrow/::1746419240
+::res://entitys/weapons/arrowWeapon/arrow/::1746419257
 Arrow01(32x32).png::CompressedTexture2D/CompressedTexture2D::609310125971938427::1720641297::1746251687::1::::<><><>0<>0<>c4c8fc118e847b2be86a4c863e8a6b97<>res://.godot/imported/Arrow01(32x32).png-be41abf34d3f5d5c0684333281f9f3df.ctex::
-arrow.gd::GDScript::4217926882933020911::1746419240::0::1::::<>Area2D<><>0<>0<><>::
+arrow.gd::GDScript::4217926882933020911::1746419257::0::1::::<>Area2D<><>0<>0<><>::
 arrow.tscn::PackedScene/PackedScene::4401748267544573085::1746251706::0::1::::<><><>0<>0<><>::uid://b1dgv0jraw60r::::res://entitys/weapons/arrowWeapon/arrow/arrow.gd<>uid://ixfiptaf03jb::::res://entitys/weapons/arrowWeapon/arrow/Arrow01(32x32).png
 ::res://entitys/weapons/magicArea/::1746419067
 MagiAnimation.tscn::PackedScene::3647044756426006551::1746419067::0::1::::<><><>0<>0<><>::uid://h1nbc0ohls5h::::res://entitys/weapons/magicArea/magi_animation.gd<>uid://bh00hoort0r3::::res://UI/xp/00.png
