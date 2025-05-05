@@ -66,6 +66,7 @@ func calculateCriticalRatio():
 
 
 func _on_timer_timeout():
+	print("xd")
 	attack()
 
 

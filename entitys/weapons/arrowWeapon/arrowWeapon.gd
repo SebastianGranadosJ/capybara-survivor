@@ -21,6 +21,7 @@ func _physics_process(delta):
 		look_at(target_enemy.global_position)
 
 func attack():
+	print("xs")
 	const ARROW = preload("res://entitys/weapons/arrowWeapon/arrow/arrow.tscn")
 	var new_arrow = ARROW.instantiate()
 	new_arrow.initialize(calculateAttackDamage())

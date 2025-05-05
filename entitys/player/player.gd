@@ -32,7 +32,7 @@ var isLevelUpMenuActive: bool = false
 var progressBarHealth
 
 func _ready():
-	addWeapon(preload("res://entitys/weapons/arrowWeapon/arrowWeapon.tscn").instantiate())
+	addWeapon(preload("res://entitys/weapons/magicArea/magic_area.tscn").instantiate())
 	levelUpMenu = preload("res://utils/LevelUpMenu/level_up_menu.tscn").instantiate()
 	%ProgressBarExperience.max_value = expForNextLevel
 	%ProgressBarExperience.value = exp

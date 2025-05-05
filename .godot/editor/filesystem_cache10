@@ -1,20 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1746259232
+::res://::1746417032
 Captura de pantalla 2025-04-21 090550.png::CompressedTexture2D/CompressedTexture2D::6470568179338975752::1745244415::1746257043::1::::<><><>0<>0<>d38bd2cca9fe6a87da60ea5dd7dcce6f<>res://.godot/imported/Captura de pantalla 2025-04-21 090550.png-3f65350e321601bb684965309c9cf9a3.ctex::
 Captura de pantalla 2025-04-21 093500.png::CompressedTexture2D/CompressedTexture2D::8598442697462638610::1745246146::1746257043::1::::<><><>0<>0<>614760f88e37ec41b587bcd090131a10<>res://.godot/imported/Captura de pantalla 2025-04-21 093500.png-4daa779394621a0619e2eb26ea018de9.ctex::
 capysentado.tscn::PackedScene/PackedScene::5232836383099721368::1746251707::0::1::::<><><>0<>0<><>::
 character_body_2d.tscn::PackedScene/PackedScene::6625016355017064374::1746251707::0::1::::<><><>0<>0<><>::uid://dm8qtsxewkjm2::::res://UI/KingSlime/KingSlime_Moving1.png<>uid://eqkfqqk0od1c::::res://UI/KingSlime/KingSlime_Moving2.png<>uid://nxri7s031jwo::::res://UI/KingSlime/KingSlime_Moving3.png<>uid://br0m1bmd0emow::::res://UI/KingSlime/KingSlime_Moving4.png
 control.gd::GDScript/GDScript::8613034063052062605::1746249375::0::1::::<>Control<><>0<>0<><>::
 default_bus_layout.tres::AudioBusLayout/AudioBusLayout::6564268947468103023::1695668179::0::1::::<><><>0<>0<><>::
-export_presets.cfg::TextFile::-1::1746258677::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile/TextFile::-1::1746259817::0::1::::<><><>0<>0<><>::
 GarlicWeapon.tscn::PackedScene/PackedScene::4925569296383706984::1746251707::0::1::::<><><>0<>0<><>::uid://vw2wx2814em1::::res://UI/armaschidas/00.png
 icon.png::CompressedTexture2D/CompressedTexture2D::621515402784007901::1695668179::1746251687::1::::<><><>0<>0<>130257868ffab54ab02a8c8a0dce8413<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
-Index.apple-touch-icon.png::CompressedTexture2D/CompressedTexture2D::8392843195640296004::1746258676::1746252746::1::::<><><>0<>0<>9bf4f7a3705d77810dbeadb0577c4cbb<>res://.godot/imported/Index.apple-touch-icon.png-2abf92429ebc65c2580a8ca36960998d.ctex::
-Index.icon.png::CompressedTexture2D/CompressedTexture2D::3817921914593950551::1746258676::1746252746::1::::<><><>0<>0<>bd06632faa346f72dd8e901470e1c4d3<>res://.godot/imported/Index.icon.png-8ba5afd37217ef7def87b9d6eac8f656.ctex::
-Index.png::CompressedTexture2D/CompressedTexture2D::103307206896116083::1746258676::1746252746::1::::<><><>0<>0<>e7304e0f41f513726e3074cf91dd7fce<>res://.godot/imported/Index.png-6a05f77b078cd8bfe3dcaa24ec64dec5.ctex::
+Index.apple-touch-icon.png::CompressedTexture2D/CompressedTexture2D::8392843195640296004::1746259817::1746252746::1::::<><><>0<>0<>9bf4f7a3705d77810dbeadb0577c4cbb<>res://.godot/imported/Index.apple-touch-icon.png-2abf92429ebc65c2580a8ca36960998d.ctex::
+Index.icon.png::CompressedTexture2D/CompressedTexture2D::3817921914593950551::1746259817::1746252746::1::::<><><>0<>0<>bd06632faa346f72dd8e901470e1c4d3<>res://.godot/imported/Index.icon.png-8ba5afd37217ef7def87b9d6eac8f656.ctex::
+Index.png::CompressedTexture2D/CompressedTexture2D::103307206896116083::1746259817::1746252746::1::::<><><>0<>0<>e7304e0f41f513726e3074cf91dd7fce<>res://.godot/imported/Index.png-6a05f77b078cd8bfe3dcaa24ec64dec5.ctex::
 pine_tree.tscn::PackedScene/PackedScene::6154957663779636383::1744664339::0::1::::<><><>0<>0<><>::uid://b7rhtttevhxtj::::res://characters/ground_shadow.png<>uid://caqfk2xng5v5u::::res://trees/pine_tree.png
 survivors_game.gd::GDScript/GDScript::1086543363107327143::1746252655::0::1::::<>Node2D<><>0<>0<><>::
-survivors_game.tscn::PackedScene::7927435167407495193::1746258713::0::1::::<><><>0<>0<><>::uid://pqlhfjko2ekl::::res://survivors_game.gd<>uid://c5g5e836tv8m4::::res://entitys/player/player.tscn<>uid://dtfsmickfoaro::::res://tile_map.tscn<>uid://c00vq86p6mjpx::::res://entitys/enemys/slime/mob.tscn
+survivors_game.tscn::PackedScene/PackedScene::7927435167407495193::1746413773::0::1::::<><><>0<>0<><>::uid://pqlhfjko2ekl::::res://survivors_game.gd<>uid://c5g5e836tv8m4::::res://entitys/player/player.tscn<>uid://dtfsmickfoaro::::res://tile_map.tscn<>uid://c00vq86p6mjpx::::res://entitys/enemys/slime/mob.tscn
 TilesetNature.png::CompressedTexture2D/CompressedTexture2D::3748218045626587727::1746217834::1746251687::1::::<><><>0<>0<>07e7a104a6941a688f39f21659e6215a<>res://.godot/imported/TilesetNature.png-0fa241683586aa69d2e7fafdec8ac041.ctex::
 tile_map.tscn::PackedScene/PackedScene::8504286728106869200::1746258535::0::1::::<><><>0<>0<><>::uid://c8jfhwxe08mfo::::res://UI/TileSet/TilesetFloor.png<>uid://btnwur0q80t00::::res://TilesetNature.png<>uid://b4dnbq0ekooe3::::res://UI/TileSet/TilesetField.png<>uid://c65ln0lffktb2::::res://UI/TileSet/TilesetVillageAbandoned.png<>uid://dv77cqvqoug80::::res://UI/TileSet/TilesetWater.png
 ::res://addons/::1695668179
@@ -45,8 +45,8 @@ slime_hurt_eyes.png::CompressedTexture2D/CompressedTexture2D::479101052744533892
 xp.gd::GDScript/GDScript::3415831929366348798::1746151780::0::1::::<>Node2D<><>0<>0<><>::
 xp.tscn::PackedScene/PackedScene::6570763802401594955::1746251706::0::1::::<><><>0<>0<><>::uid://bol1w0fa6ew4j::::res://UI/xp/Experience_Orb_-_Animated-ezgif.com-gif-to-sprite-converter.png<>uid://bowwiuiy7sqx7::::res://entitys/xp.gd
 ::res://entitys/enemys/::1745423075
-::res://entitys/enemys/slime/::1746258713
-mob.gd::GDScript::7685072857648006054::1746258713::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://entitys/enemys/slime/::1746413773
+mob.gd::GDScript/GDScript::7685072857648006054::1746413773::0::1::::<>CharacterBody2D<><>0<>0<><>::
 mob.tscn::PackedScene/PackedScene::6580477313622012201::1745506417::0::1::::<><><>0<>0<><>::res://entitys/enemys/slime/mob.gd<>uid://ogik4s70pgwl::::res://characters/slime/slime.tscn
 ::res://entitys/enemys/slime/slimeMorado/::1746251705
 mob.gd::GDScript/GDScript::7247204355030879812::1746150984::0::1::::<>CharacterBody2D<><>0<>0<><>::
@@ -108,14 +108,14 @@ weapon.tscn::PackedScene/PackedScene::5256197120369973367::1746251706::0::1::::<
 ::res://entitys/weapons/arrowWeapon/::1746253806
 arrowWeapon.gd::GDScript/GDScript::4475521018955445638::1746221124::0::1::::<>Weapon<><>0<>0<><>::
 arrowWeapon.tscn::PackedScene/PackedScene::3489635899327633147::1746251706::0::1::::<><><>0<>0<><>::uid://b408ga7u5qq8e::::res://entitys/weapons/arrowWeapon/arrowWeapon.gd
-::res://entitys/weapons/arrowWeapon/arrow/::1746258713
+::res://entitys/weapons/arrowWeapon/arrow/::1746413773
 Arrow01(32x32).png::CompressedTexture2D/CompressedTexture2D::609310125971938427::1720641297::1746251687::1::::<><><>0<>0<>c4c8fc118e847b2be86a4c863e8a6b97<>res://.godot/imported/Arrow01(32x32).png-be41abf34d3f5d5c0684333281f9f3df.ctex::
-arrow.gd::GDScript::4217926882933020911::1746258713::0::1::::<>Area2D<><>0<>0<><>::
+arrow.gd::GDScript/GDScript::4217926882933020911::1746413773::0::1::::<>Area2D<><>0<>0<><>::
 arrow.tscn::PackedScene/PackedScene::4401748267544573085::1746251706::0::1::::<><><>0<>0<><>::uid://b1dgv0jraw60r::::res://entitys/weapons/arrowWeapon/arrow/arrow.gd<>uid://ixfiptaf03jb::::res://entitys/weapons/arrowWeapon/arrow/Arrow01(32x32).png
-::res://entitys/weapons/magicArea/::1746258534
-MagiAnimation.tscn::PackedScene/PackedScene::3647044756426006551::1746258534::0::1::::<><><>0<>0<><>::uid://h1nbc0ohls5h::::res://entitys/weapons/magicArea/magi_animation.gd<>uid://bh00hoort0r3::::res://UI/xp/00.png
-magic_area.gd::GDScript/GDScript::7547565423806050417::1746257070::0::1::::<>Weapon<><>0<>0<><>::
-magic_area.tscn::PackedScene/PackedScene::2087292130976841918::1746258534::0::1::::<><><>0<>0<><>::uid://dfsdkguahpye8::::res://entitys/weapons/magicArea/magic_area.gd<>uid://br7wkahdt5vad::::res://UI/pistol/impact/shurikeeen.tscn
+::res://entitys/weapons/magicArea/::1746413773
+MagiAnimation.tscn::PackedScene/PackedScene::3647044756426006551::1746413773::0::1::::<><><>0<>0<><>::uid://h1nbc0ohls5h::::res://entitys/weapons/magicArea/magi_animation.gd<>uid://bh00hoort0r3::::res://UI/xp/00.png
+magic_area.gd::GDScript/GDScript::7547565423806050417::1746259782::0::1::::<>Weapon<><>0<>0<><>::
+magic_area.tscn::PackedScene/PackedScene::2087292130976841918::1746413773::0::1::::<><><>0<>0<><>::uid://dfsdkguahpye8::::res://entitys/weapons/magicArea/magic_area.gd
 magi_animation.gd::GDScript/GDScript::545786978084364947::1746153610::0::1::::<>Node2D<><>0<>0<><>::
 ::res://entitys/weapons/shurikenWeapon/::1746253806
 shuriken_weapon.gd::GDScript/GDScript::1089786099171978239::1746221157::0::1::::<>Weapon<><>0<>0<><>::
@@ -187,11 +187,11 @@ Yerba Brava - La Cumbia de los Trapos.mp3::AudioStreamMP3/AudioStreamMP3::821792
 ::res://UI/pistol/::1746251687
 pistol.png::CompressedTexture2D/CompressedTexture2D::6081771334990092076::1695668179::1746251687::1::::<><><>0<>0<>4ba87a2cecfd71471181d02344f7162e<>res://.godot/imported/pistol.png-77c17296957dd95fc531ffc701283564.ctex::
 projectile.png::CompressedTexture2D/CompressedTexture2D::7550039277502144023::1695668179::1746251687::1::::<><><>0<>0<>791cc530923987f0a2e476cb6c94e46d<>res://.godot/imported/projectile.png-215091f269f51aa96be5dd24175e908a.ctex::
-::res://UI/pistol/impact/::1746258534
+::res://UI/pistol/impact/::1746413773
 circle.png::CompressedTexture2D/CompressedTexture2D::8141367643636554889::1695668179::1746251687::1::::<><><>0<>0<>836665e560e611d8f0b594b3d4eec242<>res://.godot/imported/circle.png-488a82c21558f57e932804c76baed1b3.ctex::
 impact.gd::GDScript/GDScript::7685318143591530543::1695668179::0::1::::<>Node2D<><>0<>0<><>::
 impact.tscn::PackedScene/PackedScene::706737085132625066::1746251707::0::1::::<><><>0<>0<><>::uid://dhq3cjo2xwdbb::::res://UI/pistol/impact/impact.gd<>uid://dn80eu1qs371v::::res://UI/pistol/impact/circle.png
-shurikeeen.tscn::PackedScene/PackedScene::3647044756426006551::1746251707::0::1::::<><><>0<>0<><>::uid://bh00hoort0r3::::res://UI/xp/00.png
+shurikeeen.tscn::PackedScene/PackedScene::3647044756426006551::1746413773::0::1::::<><><>0<>0<><>::uid://bh00hoort0r3::::res://UI/xp/00.png
 slimemorado.tscn::PackedScene/PackedScene::9192385989944481569::1746251707::0::1::::<><><>0<>0<><>::uid://jbu2a668sa8d::::res://UI/pistol/impact/slime_violet_front.png
 slime_violet_front.png::CompressedTexture2D/CompressedTexture2D::635026576129355429::1746149689::1746251687::1::::<><><>0<>0<>eb0caad2baf03dee9a8751100d4cc97c<>res://.godot/imported/slime_violet_front.png-1ed7627804a88054a5c31757c8688320.ctex::
 xp jaja saludos.tscn::PackedScene/PackedScene::6570763802401594955::1746258534::0::1::::<><><>0<>0<><>::uid://bol1w0fa6ew4j::::res://UI/xp/Experience_Orb_-_Animated-ezgif.com-gif-to-sprite-converter.png<>uid://jbfcij7wdu5f::::res://UI/pistol/impact/xp_jaja_saludos.gd

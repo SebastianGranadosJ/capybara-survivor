@@ -3,10 +3,19 @@ extends Weapon
 var animation
 
 func _ready() -> void:
+	attack_cooldown_timer = Timer.new()
+	attack_cooldown_timer.wait_time = attackCooldown
+	attack_cooldown_timer.one_shot = false
+	attack_cooldown_timer.autostart = true
+	add_child(attack_cooldown_timer)
+	attack_cooldown_timer.timeout.connect(_on_timer_timeout)
+
+	attack_cooldown_timer.start()
 	animation = preload("res://entitys/weapons/magicArea/MagiAnimation.tscn").instantiate()
 	add_child(animation)
 
 func _init():
+	print("XD")
 	baseAttackCooldown = 1.0
 	objectName = "Magia Cabrona"
 	attackCooldown = baseAttackCooldown
@@ -22,12 +31,11 @@ func _physics_process(delta: float) -> void:
 
 
 func attack():
-
-	print("xads")
 	var enemies_in_range = %MagicArea2D.get_overlapping_bodies()
 	for enemy in enemies_in_range:
 		if enemy.has_method("take_damage"):
 			enemy.take_damage(calculateAttackDamage())
+
 
 func level_up():
 	level += 1
